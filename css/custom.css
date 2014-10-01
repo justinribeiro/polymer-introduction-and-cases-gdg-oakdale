@@ -1,0 +1,130 @@
+/* JDR: not good practice, but it's a presentation...so let's roll with it */
+
+    
+    /* Layout Boundary for updating Glass stat pack */
+    #statpack {
+      left: 10px;
+      bottom: 10px;
+      width: 250px;
+      height: 100px;
+      overflow: hidden;
+      position: absolute;
+    }
+    
+    #glass-status {
+      position: relative;
+      z-index: 30;
+      bottom: 0;
+       padding: 0.5em;
+       vertical-align: top;
+      font-family: Lato, sans-serif;
+      font-style: normal;
+      font-variant: normal;
+      font-weight: normal;
+      color: #fff;
+     }
+     
+     #glass-status h1, h2 {
+       margin: 0.6em 0;
+     }
+    
+          
+     .li-data {
+       color: #96CA33;
+       font-weight: 800;
+       padding: 0 0.25em;
+     }
+     
+     .iconned {
+       padding-right: 0.6em !important;
+     }
+
+     /** Fix for FontAwesome w/Reveal **/
+    .reveal i.fa{
+         font-family: 'FontAwesome';
+         font-style: normal;
+         font-size: 100%;
+     }
+
+     .text-center {
+       text-align: center;
+     }
+
+     .reveal ul li, .reveal ol li  {
+       padding-bottom: 0.6em;
+     }
+
+     .reveal pre code {
+       max-height: none;
+     }
+
+    /* Notifications
+    -------------------------------------------------- */
+    #notification {
+      position:fixed;
+      z-index: 2000;
+      width: 100%;
+      display:none;
+      bottom: 0;
+    }
+
+    #notification-title, #notification-message {
+      margin: 0 0 20px 0;
+      color: #eeeeee;
+      font-family: Lato, sans-serif;
+      line-height: 0.9em;
+      letter-spacing: 0.02em;
+      text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    #notification-title {
+      font-size: 3em;
+    }
+
+    #notification-message {
+      font-size: 1.6em;
+    }
+
+    .notification-show {
+      display:block !important;
+    }
+
+    .notification-padding {
+      padding: 2em;
+    }
+
+    .notification-error {
+      background-color: #c65757;
+    }
+    .notification-warning {
+      background-color: #f3c93f;
+    }
+    .notification-info {
+      background-color: #85beee;
+    }
+
+
+    .notification-success {
+      background-color: #8cc657;
+    }
+    .notification-success > div > h3, .notification-error > div > h3 {
+      color: #fff;
+    }
+    .notification-success > div > p, .notification-error > div > p {
+      color: #fff;
+    }
+    
+    .temp {
+      color: #96CA33;
+      font-weight: 800;
+      padding: 0 0.25em;
+    }
+    #sensorOutputs div {
+      padding: 0.5em;
+    }
+    
+    .smaller {
+      padding: 0 !important;
+      font-size: 75% !important;
+    }
+    
