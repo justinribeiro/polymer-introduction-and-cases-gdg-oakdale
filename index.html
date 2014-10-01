@@ -4,9 +4,9 @@
 	<head>
 		<meta charset="utf-8">
 
-    <title>Mirror API and beyond / GDG Oakdale </title>
+    <title>Polymer: Introduction and Cases / GDG Oakdale</title>
 
-    <meta name="description" content="Presentation slides for Mirror API and beyond for GDG Oakdale">
+    <meta name="description" content="Presentation slides for Polymer: Introduction and Cases for GDG Oakdale talk">
     <meta name="author" content="Justin Ribeiro">
 
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -61,9 +61,6 @@
             <i class="fa fa-twitter"></i> <a class="iconned" rel="me" href="https://twitter.com/justinribeiro"> @justinribeiro</a>
             <i class="fa fa-google-plus"></i> <a class="iconned" rel="me" href="https://plus.google.com/+JustinRibeiro/posts"> +Justin Ribeiro</a>
             <i class="fa fa-github"></i> <a class="iconned" rel="me" href="https://github.com/justinribeiro"> justinribeiro</a>
-          </p>
-          <p>
-            Slides: <a href="http://goo.gl/1O5JxR" title="short url to these slides">http://goo.gl/1O5JxR</a>
           </p>
 				</section>
 
@@ -164,14 +161,14 @@ $( &quot;#clickme&quot; ).click(function() {
     &lt;li&gt;&lt;a href=&quot;#tabs-3&quot;&gt;Aenean lacinia&lt;/a&gt;&lt;/li&gt;
   &lt;/ul&gt;
   &lt;div id=&quot;tabs-1&quot;&gt;
-    &lt;p&gt;Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.&lt;/p&gt;
+    &lt;p&gt;Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante.&lt;/p&gt;
   &lt;/div&gt;
   &lt;div id=&quot;tabs-2&quot;&gt;
-    &lt;p&gt;Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.&lt;/p&gt;
+    &lt;p&gt;Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. &lt;/p&gt;
   &lt;/div&gt;
   &lt;div id=&quot;tabs-3&quot;&gt;
-    &lt;p&gt;Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.&lt;/p&gt;
-    &lt;p&gt;Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.&lt;/p&gt;
+    &lt;p&gt;Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem.&lt;/p&gt;
+    &lt;p&gt;Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna.&lt;/p&gt;
   &lt;/div&gt;
 &lt;/div&gt;
           </code></pre>
@@ -323,16 +320,16 @@ $( &quot;#clickme&quot; ).click(function() {
 				<section>
 				  <h2>Walking through boilerplate</h2>
 				  <pre><code>
-<polymer-element name="my-element">
-    <script>
+&lt;polymer-element name=&quot;my-element&quot;&gt;
+    &lt;script&gt;
         Polymer('my-element', {
             // Fires when an instance of the element is created
             created: function() {},
 
-            // Fires when the element’s initial set of children and siblings are guaranteed to exist
+            // Fires when the element&rsquo;s initial set of children and siblings are guaranteed to exist
             domReady: function() {},
 
-            // Fires when the "<polymer-element>" has been fully prepared
+            // Fires when the &quot;&lt;polymer-element&gt;&quot; has been fully prepared
             ready: function() {},
 
             // Fires when the element was inserted into the document
@@ -344,44 +341,52 @@ $( &quot;#clickme&quot; ).click(function() {
             // Fires when an attribute was added, removed, or updated
             attributeChanged: function(attr, oldVal, newVal) {}
         });
-    </script>
-</polymer-element>
+    &lt;/script&gt;
+&lt;/polymer-element&gt;
 				  </code></pre>
 				</section>
 				
 				<section>
 				  <h2>Extending into Hello World</h2>
 				  <pre><code>
-<polymer-element name="hello-world" attributes="who">
+&lt;polymer-element name=&quot;hello-world&quot; attributes=&quot;who&quot;&gt;
+    &lt;template&gt;
+        &lt;p&gt;Hello &lt;strong&gt;{{who}}&lt;/strong&gt; :)&lt;/p&gt;
+    &lt;/template&gt;
 
-    <template>
-        <p>Hello <strong>{{who}}</strong> :)</p>
-    </template>
-
-    <script>
+    &lt;script&gt;
         Polymer('hello-world', {
             who: 'World'
         });
-    </script>
-
-</polymer-element>
+    &lt;/script&gt;
+&lt;/polymer-element&gt;
 				  </code></pre>
 				</section>
 				
 				<section>
 				  <h2>In Use</h2>
 				  <pre><code>
-				    <hello-world who="Justin"></hello-world>
+				    &lt;hello-world who=&quot;Justin&quot;&gt;&lt;/hello-world&gt;
 				  </code></pre>
 				</section>
+
+        <section>
+          <h2>Explore time!</h2>
+          <p><a href="demos.html">My Quick Demo Page</a></p>
+        </section>
 				
 				<section>
 				  <h2>Of course all that code is open source</h2>
 				  <ul>
-				    <li>https://github.com/webcomponents/polymer-boilerplate/</li>
-				    <li>https://github.com/webcomponents/hello-world-polymer/</li>
-				    <li>You could also use Yeoman <code>npm install generator-element; yo element;</code></li>
+				    <li><a href="https://github.com/webcomponents/polymer-boilerplate/">webcomponents/polymer-boilerplate</a></li>
+				    <li><a href="https://github.com/webcomponents/hello-world-polymer/">webcomponents/hello-world-polymer</a></li>
+				    <li>You could also use Yeoman if you like:</li>
 				  </ul>
+<pre><code>
+$ ~ npm install generator-element 
+$ ~ yo element
+
+</code></pre>
 				</section>
 				
 				<section>
@@ -397,16 +402,17 @@ $( &quot;#clickme&quot; ).click(function() {
 				<section>
 				  <h2>Where would I get them?</h2>
 				  <ul>
-				    <li>CustomElements.io</li>
-				    <li>Polymer's Catalog</li>
+				    <li><a href="http://customelements.io/">CustomElements.io</a></li>
+				    <li><a href="https://www.polymer-project.org/docs/elements/">Polymer's Catalog</a></li>
+            <li>Github... et cetera</li>
 				  </ul>
-          <p>They're just a bower install away.</p>
+          <p>They're just a <code>bower install</code> away.</p>
 				</section>
 				
 				<section>
 			    <h2>Justin that’s going to fire up lots of HTTP requests!</h2>
           <p>Yep, we need to worry about our performance. We have tools for that.</p>
-          <p>Vulcanize (https://github.com/Polymer/vulcanize)</p>
+          <p>Vulcanize: <a href="https://github.com/Polymer/vulcanize">Polymer/vulcanize</a></p>
           <p>Of course it works with Grunt/Gulp, what is this 1998?</p>
 				</section>
 				
@@ -423,19 +429,14 @@ $( &quot;#clickme&quot; ).click(function() {
 				<section>
 				  <h2>Sites in action!</h2>
 				  <ul>
-				    <li>Polymer</li>
-            <li>Github</li>
-            <li>Chrome OS</li>
-            <li>Oakdale OpenMesh</li>
+				    <li><a href="https://www.polymer-project.org">Polymer</a></li>
+            <li><a href="https://www.github.com">Github</li>
+            <li>Chrome OS - the Google Music player</li>
+            <li><a href="https://www.oakdaleopenmesh.org/">Oakdale OpenMesh</a></li>
 				  </ul>
 				</section>
 				
 				<section>
-				  <h2>That's quite the crash course</h2>
-				  <h3>There is sooo much more</h3>
-				</section>
-				
-        <section>
 				  <h2>That's quite the crash course</h2>
 				  <h3>There is sooo much more</h3>
 				</section>

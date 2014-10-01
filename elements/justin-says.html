@@ -1,0 +1,20 @@
+<!-- Import Polymer -->
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<!-- Define your custom element -->
+<polymer-element name="justin-says" attributes="verb thing">
+    <template>
+        <style>
+          span { font-variant: small-caps; }
+        </style>
+        <p>I'm telling you, <strong>{{verb}}</strong> <span>{{thing}}</span> is sweet sauce.</p>
+    </template>
+
+    <script>
+        Polymer('justin-says', {
+            verb: 'eating',
+            thing: 'spaghetti tacos'
+        });
+    </script>
+
+</polymer-element>
